@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RPG_Game</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<!-- Added link to the css reset file -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Added link to the css style file -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+</head>
+<body>
+	
+<div class="container">
+
+	<!--Header here-->
+	<div class="page-header">
+	  <h1>RPG Game!</h1>
+	</div>
+
+	<!--Initial character selection images here-->
+	<div class="panel panel-default">
+	    <div class="panel-heading">Choose Your Character:</div>
+	        <div class="panel-body">
+	            <ul class="nav nav-tabs">
+	               	<li class="list-group-item char-image character-choose" id="character1" value="120">
+	               		<div class="thumbnail">
+	  						<h3>Character 1 Name</h3>
+      						<img src="./assets/images/ruby.png" width="80" alt="ruby">
+      						<div class="caption">
+        						<p id="character-1-hp">HP: 120</p>
+      						</div>
+    					</div>
+	               	</li>
+		    		<li class="list-group-item char-image character-choose" id="character2" value="100">
+		    			<div class="thumbnail">
+	  						<h3>Character 2 Name</h3>
+      						<img src="./assets/images/diamond.png" width="80" alt="diamond">
+      						<div class="caption">
+        						<p id="character-2-hp">HP: 100</p>
+      						</div>
+    					</div>
+		    		</li>
+		    		<li class="list-group-item char-image character-choose" id="character3" value="150">
+		    			<div class="thumbnail">
+	  						<h3>Character 3 Name</h3>
+      						<img src="./assets/images/amber.png" width="80" alt="amber">
+      						<div class="caption">
+        						<p id="character-3-hp">HP: 150</p>
+      						</div>
+    					</div>
+    				</li>
+		    		<li class="list-group-item char-image character-choose" id="character4" value="180">
+		    			<div class="thumbnail">
+	  						<h3>Character 4 Name</h3>
+      						<img src="./assets/images/emerald.png" width="80" alt="emerald">
+      						<div class="caption">
+        						<p id="character-4-hp">HP: 180</p>
+      						</div>
+    					</div>
+		    		</li>
+	            </ul>
+	        </div>
+	</div>
+
+	<!--Your character after chosen-->
+	<div class="panel panel-default">
+	    <div class="panel-heading">Your Choosen Character:</div>
+	        <div class="panel-body">
+	            <ul class="nav nav-tabs chosen-character-block">
+
+	            </ul>
+	        </div>
+	</div>
+
+	<!--Characters remaining to attack-->
+	<div class="panel panel-default">
+	    <div class="panel-heading">Enemies Available To Attack:</div>
+	        <div class="panel-body">
+	            <ul class="nav nav-tabs enemies-available-block">
+
+	            </ul>
+	        </div>
+	</div>
+
+	<!--Attack Section-->
+	<div class="panel panel-default">
+	  <div class="panel-heading">Fight Section:</div>
+	  <div class="panel-body" id="fight-section">
+	    <div>
+			<button type="button" class="btn btn-info" id="attack" style="display:none">ATTACK!</button>
+		</div>
+	  </div>
+	</div>
+
+
+	<!--Defender-->
+	<div class="panel panel-default">
+	    <div class="panel-heading">Defender:</div>
+	        <div class="panel-body">
+	            <ul class="nav nav-tabs defender-block">
+
+	            </ul>
+	        </div>
+	</div>
+
+	<div class="panel panel-default">
+	  <div class="panel-heading">Game Status:</div>
+	  	<div class="panel-body">
+		  <ul class="list-group">
+		    <li class="list-group-item" style="display:none;">Your attack message here.</li>
+		    <li class="list-group-item" style="display:none;">Defender attack message here.</li>
+		    <li class="list-group-item" style="display:none;">Game status here.</li>
+		    <li class="list-group-item">
+		    	<div>
+					<button type="button" class="btn btn-info" id="reset">RESET GAME</button>
+				</div>
+		    </li>
+		  </ul>
+		</div>
+
+	</div>
+
+
+</div>
+
+<!-- Added link to the javascript file -->
+<script type="text/javascript" src="./assets/javascript/javascript.js"></script>
+
+</body>
+</html>
